@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/v.jpg);
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+body .container {
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  body .container {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body .container {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  body .container {
+    width: 90vw;
+  }
+}
+body .container h1 {
+  text-align: center;
+}
+body .container .mistakes {
+  text-align: end;
+  margin: 30px 0 20px 0;
+}
+@media only screen and (max-width: 530px) {
+  body .container .mistakes {
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+  }
+}
+body .container .status {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 530px) {
+  body .container .status {
+    flex-direction: column;
+  }
+}
+body .container .status_images, body .container .status_question-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  overflow: hidden;
+}
+body .container .status_images {
+  flex-grow: 1;
+}
+body .container .status_images img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 530px) {
+  body .container .status_images img {
+    height: 250px;
+  }
+}
+body .container .status_question-box {
+  background-color: rgba(255, 255, 255, 0.877);
+  color: rgb(56, 56, 56);
+  gap: 20px;
+  padding: 20px;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  body .container .status_question-box {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body .container .status_question-box {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  body .container .status_question-box {
+    font-size: 12px;
+    flex-basis: 40%;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  body .container .status_question-box {
+    font-size: 15px;
+  }
+}
+body .container .keyboard {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+body .container .keyboard_btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: inherit;
+  color: rgb(142, 0, 0);
+  cursor: pointer;
+}
+body .container .keyboard h2 {
+  text-align: center;
+}
+body .container .keyboard .disabled {
+  cursor: context-menu;
+}
+body .container .reset-box {
+  text-align: center;
+  margin: 20px 0;
+}
+body .container .reset-box_reset {
+  padding: 10px 40px;
+  background: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+body .container .reset-box_reset:hover {
+  background: red;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.586);
+}
+
+/*# sourceMappingURL=style.css.map */
